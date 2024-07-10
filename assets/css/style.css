@@ -334,7 +334,15 @@ main {
 .avatar-box {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
+  overflow: hidden; /* Ensures that the border-radius is applied fully */
 }
+
+.avatar-box img {
+  width: 100%; /* Ensure the image fills the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 20px; /* Apply the same border-radius to the image */
+}
+
 
 .info-content .name {
   color: var(--white-2);
