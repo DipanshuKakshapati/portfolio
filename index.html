@@ -461,10 +461,10 @@
                 using a JSON snippet to inject an SEO-pixel into HTML. This technique groups results by consistent dimensions such
                 as height and width, enhancing robustness against layout changes.<br>
 
-                <br>Designed and implemented an automated ETL pipeline using Apache Airflow that daily aggregates and processes
-                stock data through a FastAPI service. The data is transformed, analyzed for gains and losses, stored in PostgreSQL,
-                and archived on Amazon S3. This system, hosted on AWS EC2, is efficiently monitored and managed via Airflow's
-                webserver UI.
+                <br>Designed and implemented an automated ETL pipeline using Apache Airflow that daily aggregates and processes stock data through a FastAPI service. 
+                The data is transformed, analyzed for gains and losses, stored in PostgreSQL, and archived on Amazon S3. 
+                After the data is moved to Amazon S3, it is also transferred to Snowflake for further analysis, and then visualized using Looker Studio. 
+                This system, hosted on AWS EC2, is efficiently monitored and managed via Airflow's webserver UI.
               </p>
 
             </li>
@@ -627,15 +627,19 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>ETL Pipeline</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+              <button data-filter-btn>ML Model</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button data-filter-btn>API Development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web Scrape and Filter</button>
             </li>
 
           </ul>
@@ -659,15 +663,19 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>ETL Pipeline</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Applications</button>
+                <button data-select-item>ML Model</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web development</button>
+                <button data-select-item>API Development</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-tem>Web Scrape and Filter</button>
               </li>
 
             </ul>
@@ -676,8 +684,8 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="ml model">
+              <a href="https://uber-fair-amount-prediction.streamlit.app/">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -687,15 +695,15 @@
                   <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Finance</h3>
+                <h3 class="project-title">Uber Fare Prediction Model</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">ML Model</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="ml model">
+              <a href="https://teach-for-india-employee-performance-prediction-tool.streamlit.app/">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -705,14 +713,14 @@
                   <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Orizon</h3>
+                <h3 class="project-title">Teach For India Employee Performance Prediction Model</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">ML Model</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="etl pipeline">
               <a href="#">
 
                 <figure class="project-img">
@@ -723,14 +731,14 @@
                   <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Fundo</h3>
+                <h3 class="project-title">NEPSE Stock Data ETL Pipeline</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">ETL Pipeline</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <li class="project-item  active" data-filter-item data-category="api development">
               <a href="#">
 
                 <figure class="project-img">
@@ -741,14 +749,14 @@
                   <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Brawlhalla</h3>
+                <h3 class="project-title">NEPSE Stock API</h3>
 
-                <p class="project-category">Applications</p>
+                <p class="project-category">API Development</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="web scrape and filter">
               <a href="#">
 
                 <figure class="project-img">
@@ -759,14 +767,14 @@
                   <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
                 </figure>
 
-                <h3 class="project-title">DSM.</h3>
+                <h3 class="project-title">Google Search Ads and Organic Content Filtering</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Web Scrape and Filter</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="web scrape and filter">
               <a href="#">
 
                 <figure class="project-img">
@@ -777,9 +785,9 @@
                   <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">MetaSpark</h3>
+                <h3 class="project-title">NEPSE Stock Web Scrape</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Web Scrape and Filter</p>
 
               </a>
             </li>
@@ -876,22 +884,17 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
-
+          <form action="sendEmail.php" method="post" class="form" data-form>
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
-
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
+            <button class="form-btn" type="submit" data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
-
-          </form>
+          </form>          
 
         </section>
 
